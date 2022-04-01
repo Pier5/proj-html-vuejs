@@ -2,13 +2,22 @@
   <header>
     <div class="container">
       <img class="head-logo" src="../assets/img/light-logo.png" alt="logo azienda MaxCoach">
-      <nav>
+      <nav class="nav-head">
         <ul>
           <li class="list-item" v-for="item in arrNavBar" :key="item">
             <a class="link-item" href="item.link">{{ item.text }}</a>
-            <i class="fa-solid fa-angle-down"></i>
+            <font-awesome-icon icon="fa-solid fa-angle-down" />
           </li>
         </ul>
+        <div class="cart">
+          <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+          <div class="cart-items"><span class="items-add">0</span></div>
+        </div>
+        <font-awesome-icon icon="fa-regular fa-circle-user" />
+        <div class="input-search">
+          <input class="search-bar" type="text" placeholder="Search..">
+          <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+        </div>
       </nav>
     </div>
   </header>
@@ -44,7 +53,6 @@ export default {
           text: 'Shop',
           link: '#'
         }
-
       ]
     }
   }
@@ -60,13 +68,28 @@ header {
   background-color: $rhino-color;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  .fa-cart-shopping,
+  .fa-circle-user {
+    color: $white-color;
+    align-self: flex-end;
+    font-size: 1.1rem;
+    margin-left: 8px;
+  }
+  .fa-circle-user {
+    align-self: center
+  }
   .head-logo {
-    width: 10%;
+    width: 12%;
     margin-right: auto;
   }
-  .list-item {
-    display: inline-block;
-    margin-right: 40px;
+  .nav-head {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .list-item {
+      display: inline-block;
+      margin-left: 40px;
      .link-item {
         color: $white-color;
         text-decoration: none;
@@ -78,7 +101,38 @@ header {
         font-size: .6rem;
         margin-left: 5px;
       }
+    }
+    .cart {
+      position: relative;
+      margin-right: 30px;
+      .cart-items {
+        width: 15px;
+        height: 15px;
+        color: $white-color;
+        background-color: $white-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        border-radius: 50%;
+        font-size: .6rem;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+      }
+    }
+    .input-search {
+      background-color: white;
+      padding: .8rem;
+      margin-left: 20px;
+      border-radius: .4rem;
+      .search-bar {
+        border: none;
+      }
+      .fa-magnifying-glass {
+        color: $mountain-meadow;
+      }
+    }
   }
-
 }
 </style>
