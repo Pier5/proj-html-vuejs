@@ -75,6 +75,7 @@ header {
     align-self: flex-end;
     font-size: 1.1rem;
     margin-left: 8px;
+    cursor: pointer;
   }
   .fa-circle-user {
     align-self: center
@@ -90,6 +91,7 @@ header {
     .list-item {
       display: inline-block;
       margin-left: 40px;
+      cursor: pointer;
      .link-item {
         color: $white-color;
         text-decoration: none;
@@ -123,14 +125,16 @@ header {
     }
     .input-search {
       background-color: white;
-      padding: .8rem;
       margin-left: 20px;
       border-radius: .4rem;
+        padding: .4rem;
       .search-bar {
         border: none;
+        padding: .4rem 0;
       }
       .fa-magnifying-glass {
         color: $mountain-meadow;
+        padding-left: .2rem;
       }
     }
   }
