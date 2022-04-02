@@ -8,3 +8,15 @@ body {
     align-items: center;
     margin: 0 auto;
 }
+
+.patterns {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.pattern {
+    height: 800px;
+    border-left: 1px solid #F5F5F5;
+    margin: 0 100px;
+}

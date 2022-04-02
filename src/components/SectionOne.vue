@@ -28,6 +28,7 @@ export default {
   background-color: $portgore-color;
   height: 500px;
   position: relative;
+  z-index: -2;
   .container {
     justify-content: center;
     flex-direction: column;
@@ -51,7 +52,6 @@ export default {
         font-weight: bolder;
         padding: .7rem 1.2rem;
         border-radius: 3px;
-        cursor: pointer;
         margin-bottom: 60px;
       }
     }
@@ -60,7 +60,7 @@ export default {
     width: 17%;
     position: absolute;
     bottom: -60px;
-    left: 296px;
+    left: 290px;
   }
   .jumbo-img {
     width: 45%;
@@ -74,7 +74,8 @@ export default {
     width: 10%;
     position: absolute;
     bottom: -170px;
-    right: 363px;
+    right: 360px;
+    z-index: -1;
   }
   .img-yt {
     position: absolute;
