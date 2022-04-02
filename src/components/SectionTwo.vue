@@ -70,12 +70,12 @@ export default {
       display: flex;
       margin-top: 100px;
       .single-statistic {
-        margin-right: 40px;
+        margin-right: 45px;
       }
       h2 {
         color: $mountain-meadow;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         font-weight: 600;
       }
       h4 {
