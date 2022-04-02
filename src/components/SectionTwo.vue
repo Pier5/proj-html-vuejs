@@ -44,7 +44,6 @@ export default {
 .section-two {
   margin-top: 60px;
   background-color: $white-color;
-  height: 300px;
   .quote {
     position: absolute;
     margin-top: 200px;
