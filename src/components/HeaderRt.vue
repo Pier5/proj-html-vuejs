@@ -60,12 +60,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/styles/partials/variables.scss";
+@import "../assets/styles/partials/variables";
 
 header {
   width: 100%;
   height: 5rem;
-  background-color: $rhino-color;
+  background-color: $portgore-color;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
