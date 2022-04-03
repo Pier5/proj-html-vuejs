@@ -108,9 +108,9 @@ export default {
       }
       .under-circle {
         position: absolute;
-        top: 80px;
+        top: 75px;
         right: 30px;
-        width: 40%;
+        width: 45%;
         z-index: 0;
       }
     }

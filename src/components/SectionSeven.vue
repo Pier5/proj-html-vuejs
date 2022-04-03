@@ -17,7 +17,6 @@ export default {
 @import "../assets/styles/partials/variables";
 
 .section-bridge {
-    width: 700px;
     text-align: center;
     margin: 0 auto;
     .bridge-text {

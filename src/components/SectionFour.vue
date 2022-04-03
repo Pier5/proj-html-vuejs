@@ -87,7 +87,7 @@ export default {
 @import "../assets/styles/partials/variables";
 
 .section-four {
-  background-color: $hintred-color;
+  background-color: $lightheavenly;
   margin-top: 100px;
   .course-card {
     width: 700px;
