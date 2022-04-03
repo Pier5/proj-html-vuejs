@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/styles/partials/variables.scss";
+@import "../assets/styles/partials/variables";
 
 .section-two {
   margin-top: 60px;

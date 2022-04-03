@@ -33,7 +33,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-right">
           <span class="span-text">Together we can create</span>
           <h1>Service We <span class="green-text">Can Provide</span> For My Clients. </h1>
@@ -45,7 +44,6 @@
         </ul>
         <button class="main-btn">Get started for free</button>
         </div>
-
       </div>
     </div>
   </section>
@@ -58,10 +56,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/styles/partials/variables.scss";
+@import "../assets/styles/partials/variables";
 
 .section-three {
-  height: 650px;
+  height: 550px;
 }
 .info-section{
   position: absolute;
@@ -73,6 +71,7 @@ export default {
     width: 55%;
     .col-col-left {
       width: 50%;
+      margin-bottom: 40px;
       box-shadow: 0 3px 10px 8px rgba(211, 208, 208, 0.3);
     }
     .col-col-right {
@@ -84,7 +83,7 @@ export default {
     .col-top,
     .col-bottom {
       margin-bottom: 25px;
-      padding: .4rem;
+      padding: .6rem .4rem 0;
     }
     .col-top {
       box-shadow: 0 3px 10px 8px rgba(211, 208, 208, 0.3);
@@ -125,6 +124,7 @@ export default {
     .span-text {
       font-size: .7rem;
       color: $dovegray-color;
+      text-transform: uppercase;
     }
     h1 {
       margin: 1rem 0 1.6rem;
@@ -149,16 +149,17 @@ export default {
       margin-right: .6rem;
     }
     .main-btn {
-        border: none;
-        background-color: $mountain-meadow;
-        color: $white-color;
-        font-weight: bolder;
-        font-size: .7rem;
-        padding: .6rem 1.2rem;
-        border-radius: 3px;
-        margin-top: 15px;
-        cursor: pointer;
-      }
+      border: none;
+      background-color: $mountain-meadow;
+      color: $white-color;
+      font-weight: bolder;
+      font-size: .7rem;
+      padding: .6rem 1.2rem;
+      border-radius: 3px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-family: 'Quicksand', sans-serif;
+    }
   }
 }
 </style>

@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/styles/partials/variables.scss";
+@import "../assets/styles/partials/variables";
 
 .section-one {
   background-color: $portgore-color;
@@ -47,14 +47,15 @@ export default {
         margin-bottom: 25px;
       }
       .main-btn {
-        border: none;
-        background-color: $mountain-meadow;
-        color: $white-color;
-        font-weight: bolder;
-        font-size: .7rem;
-        padding: .6rem 1.2rem;
-        border-radius: 3px;
-        margin-bottom: 60px;
+      border: none;
+      background-color: $mountain-meadow;
+      color: $white-color;
+      font-weight: bolder;
+      font-size: .7rem;
+      padding: .6rem 1.2rem;
+      border-radius: 3px;
+      margin-bottom: 60px;
+      font-family: 'Quicksand', sans-serif;
       }
     }
   }
