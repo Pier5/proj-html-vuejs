@@ -70,7 +70,7 @@ export default {
       display: flex;
       margin-top: 100px;
       .single-statistic {
-        margin-right: 45px;
+        margin-right: 40px;
       }
       h2 {
         color: $mountain-meadow;

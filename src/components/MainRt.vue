@@ -6,6 +6,7 @@
     <SectionFour />
     <SectionFive />
     <SectionSix />
+    <SectionSeven />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import SectionThree from './SectionThree.vue'
 import SectionFour from './SectionFour.vue'
 import SectionFive from './SectionFive.vue'
 import SectionSix from './SectionSix.vue'
+import SectionSeven from './SectionSeven.vue'
 
 export default {
   name: 'MainRt',
@@ -25,7 +27,8 @@ export default {
     SectionThree,
     SectionFour,
     SectionFive,
-    SectionSix
+    SectionSix,
+    SectionSeven
   }
 }
 </script>

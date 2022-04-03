@@ -84,6 +84,7 @@ export default {
     .col-bottom {
       margin-bottom: 25px;
       padding: .6rem .4rem 0;
+      border-radius: 5px;
     }
     .col-top {
       box-shadow: 0 3px 10px 8px rgba(211, 208, 208, 0.3);
