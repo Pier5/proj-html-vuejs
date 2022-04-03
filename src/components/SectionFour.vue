@@ -113,9 +113,11 @@ export default {
       flex-wrap: wrap;
       margin-top: 30px;
       .card {
-        width: 330px;
+        width: 340px;
         display: flex;
-        margin: 20px 10px;
+        margin: 20px 5px;
+        padding: 10px;
+        cursor: pointer;
         .circle {
           width: 100px;
           height: 100px;
@@ -169,5 +171,8 @@ export default {
       }
     }
   }
+  .card:hover {
+          background-color: white;
+        }
 }
 </style>

@@ -140,7 +140,8 @@ export default {
       font-size: .6rem;
       color: $dovegray-color;
       line-height: 1.4rem;
-      font-family: 'Questrial', sans-serif;
+      font-family: "Gilroy";
+      font-weight: bolder;
     }
     li::before {
       content: "\2713";

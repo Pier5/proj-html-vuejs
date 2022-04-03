@@ -127,7 +127,7 @@ header {
       background-color: white;
       margin-left: 20px;
       border-radius: .4rem;
-        padding: .4rem;
+      padding: .4rem;
       .search-bar {
         border: none;
         padding: .4rem 0;

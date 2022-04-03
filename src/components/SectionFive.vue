@@ -17,9 +17,9 @@
         <div class="client"
           v-for="element in logoClients"
           :key="element"
-        >
-        <a :href="element.link"><img :src="element.logo" :alt="element.text" class="logos"></a>
-      </div>
+          >
+          <a :href="element.link"><img :src="element.logo" :alt="element.text" class="logos"></a>
+        </div>
       </div>
     </div>
   </section>
@@ -92,6 +92,7 @@ export default {
   .quote {
     margin-top: 50px;
     display: flex;
+    width: 600px;
     .circles {
       width: 30%;
       margin-left: 20px;
@@ -108,7 +109,7 @@ export default {
       .under-circle {
         position: absolute;
         top: 80px;
-        right: 40px;
+        right: 30px;
         width: 40%;
         z-index: 0;
       }
@@ -117,13 +118,13 @@ export default {
       width: 70%;
       text-align: left;
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: lighter;
       }
       h3 {
         text-transform: uppercase;
         margin-top: 20px;
-        font-size: .7rem;
+        font-size: .6rem;
       }
       h4 {
         margin-top: 10px;
@@ -134,14 +135,14 @@ export default {
   }
   .clients {
     display: flex;
-    margin: 70px 0;
+    margin: 60px 0;
+    margin-left: 30px;
     .client {
-      margin-left: 45px;
       align-self: center;
     }
     .logos {
-      width: 80%;
-      margin-right: 80px;
+      width: 60%;
+      margin-right: 20px;
     }
   }
 }
