@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="head-page">
     <div class="container">
       <img class="head-logo" src="../assets/img/light-logo.png" alt="logo azienda MaxCoach">
       <nav class="nav-head">
