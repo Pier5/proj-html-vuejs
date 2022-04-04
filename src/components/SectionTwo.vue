@@ -1,5 +1,13 @@
 <template>
   <section class="section-two">
+    <div class="circle circle-one"></div>
+    <div class="circle circle-two"></div>
+    <div class="circle circle-three"></div>
+    <div class="circle circle-four"></div>
+    <div class="circle circle-five"></div>
+    <div class="circle circle-six"></div>
+    <div class="circle circle-seven"></div>
+    <div class="circle circle-eight"></div>
     <div class="patterns">
       <div class="pattern"></div>
       <div class="quote">
@@ -43,8 +51,71 @@ export default {
   background-color: $white-color;
   background-image: url("../assets/img/background-pattern-grid-line.png");
   background-position-x: center;
-  .quote {
+  position: relative;
+  overflow-y: hidden;
+  .circle {
     position: absolute;
+    border-radius: 50%;
+  }
+  .circle-one {
+    width: 40px;
+    height: 40px;
+    background-color: $anzac-color;
+    left: 150px;
+    bottom: 200px;
+  }
+  .circle-two {
+    width: 30px;
+    height: 30px;
+    background-color: #fa7d61;
+    bottom: 360px;
+    left: 350px;
+  }
+  .circle-three {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 5px solid #bce6df;
+    top: 40px;
+    left: 320px;
+  }
+  .circle-four {
+    width: 30px;
+    height: 30px;
+    background-color: $mandy-color;
+    right: 350px;
+    top: 230px;
+  }
+  .circle-five {
+    width: 25px;
+    height: 25px;
+    background-color: #aab8f1;
+    right: 470px;
+    bottom: 320px;
+  }
+  .circle-six {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 7px solid #f6b9aa;
+    bottom: 180px;
+    right: 400px;
+  }
+  .circle-seven {
+    width: 20px;
+    height: 20px;
+    background-color: #bc71fe;
+    top: 120px;
+    left: 660px;
+  }
+  .circle-eight {
+    width: 32px;
+    height: 32px;
+    background-color: #bce6df;
+    top: -15px;
+    right: 350px;
+  }
+  .quote {
     margin-top: 200px;
     width: 560px;
     text-align: center;

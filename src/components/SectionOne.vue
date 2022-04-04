@@ -31,7 +31,6 @@ export default {
   background-color: $portgore-color;
   height: 500px;
   position: relative;
-  z-index: -2;
   .container {
     justify-content: center;
     flex-direction: column;
@@ -95,6 +94,7 @@ export default {
         width: 12%;
         position: relative;
         bottom: -170px;
+        z-index: 0;
       }
     }
   }
