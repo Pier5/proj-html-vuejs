@@ -1,5 +1,12 @@
 <template>
   <section class="section-one">
+    <div class="items">
+
+      <div class="icon"><a href=""><font-awesome-icon class="item" icon="fa-solid fa-ruler" /></a></div>
+      <div class="icon"><a href=""><font-awesome-icon class="item" icon="fa-solid fa-life-ring" /></a></div>
+      <div class="icon"><a href=""><font-awesome-icon class="item" icon="fa-solid fa-book" /></a></div>
+      <div class="icon"><a href=""><font-awesome-icon class="item" icon="fa-solid fa-cart-shopping" /></a></div>
+    </div>
     <div class="container">
       <div class="main-start">
         <h1>Learn At Your Own Pace!</h1>
@@ -31,6 +38,27 @@ export default {
   background-color: $portgore-color;
   height: 500px;
   position: relative;
+  background-image: url('../assets/img/Mask group.svg');
+  .items {
+    width: 25px;
+    background-color: $white-color;
+    border-radius: 3px;
+    position: fixed;
+    z-index: 2;
+    top: 140px;
+    right: 0;
+    a {
+      color: black;
+    }
+    .icon {
+      height: calc(100% / 4);
+      font-size: .9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: .4rem;
+    }
+  }
   .container {
     justify-content: center;
     flex-direction: column;
@@ -49,15 +77,16 @@ export default {
         margin-bottom: 25px;
       }
       .main-btn {
-      border: none;
-      background-color: $mountain-meadow;
-      color: $white-color;
-      font-weight: bolder;
-      font-size: .7rem;
-      padding: .6rem 1.2rem;
-      border-radius: 3px;
-      margin-bottom: 60px;
-      font-family: 'Quicksand', sans-serif;
+        border: none;
+        background-color: $mountain-meadow;
+        color: $white-color;
+        font-weight: bolder;
+        font-size: .7rem;
+        padding: .6rem 1.2rem;
+        border-radius: 3px;
+        margin-bottom: 60px;
+        font-family: 'Quicksand', sans-serif;
+        cursor: pointer;
       }
     }
     .img-container {
@@ -81,13 +110,15 @@ export default {
         position: relative;
         bottom: 45px;
         z-index: 1;
+        box-shadow:  2px 12px 0 0 rgba(211, 208, 208, 0.18);
       }
       .img-over-middle {
         position: absolute;
         bottom: -140px;
-        right: 500px;
+        right: 495px;
         width: 55px;
         z-index: 2;
+        cursor: pointer;
       }
       .img-right {
         float: left;
@@ -98,5 +129,9 @@ export default {
       }
     }
   }
+  .icon:hover {
+      background-color: $mountain-meadow;
+      transform: scale(1.3);
+    }
 }
 </style>

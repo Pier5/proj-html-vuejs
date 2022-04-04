@@ -69,6 +69,8 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: fixed;
+  z-index: 5;
   .fa-cart-shopping,
   .fa-circle-user {
     color: $white-color;
