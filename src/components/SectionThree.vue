@@ -10,7 +10,7 @@
           <div class="col-col-left">
             <div class="col-top">
               <h2>Graphic design</h2>
-              <h3>Have a passion for graphic and arts? Show your talents with confidence and self-assertiveness.</h3>
+              <h3>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</h3>
               <img class="img-info" src="../assets/img/home-6-service-image-01.png" alt="">
             </div>
             <div class="col-bottom">
