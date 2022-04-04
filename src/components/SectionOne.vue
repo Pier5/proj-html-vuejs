@@ -8,6 +8,7 @@
         <div class="img-container">
           <img class="img-left" src="../assets/img/home-6-hero-left-person-244x300.png" alt="">
           <img class="img-middle" src="../assets/img/home-6-hero-poster-final.jpg" alt="">
+          <img class="img-over-middle" src="../assets/img/icon-youtube-play.png" alt="">
           <img class="img-right" src="../assets/img/home-6-hero-right-person.png" alt="">
         </div>
       </div>
@@ -63,6 +64,8 @@ export default {
     .img-container {
       width: 100%;
       margin: 30px auto 0;
+      position: relative;
+
       .img-left {
         float: left;
         width: 25%;
@@ -80,10 +83,18 @@ export default {
         bottom: 45px;
         z-index: 1;
       }
+      .img-over-middle {
+        position: absolute;
+        bottom: -140px;
+        right: 500px;
+        width: 55px;
+        z-index: 2;
+      }
       .img-right {
         float: left;
-        width: 15%;
-        margin-top: 160px;
+        width: 12%;
+        position: relative;
+        bottom: -170px;
       }
     }
   }
