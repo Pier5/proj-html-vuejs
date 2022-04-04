@@ -4,6 +4,9 @@
       <h1>Why People Talk About <span class="green-text">MaxCoach</span>?</h1>
       <div class="quote">
         <div class="circles">
+          <div class="brown-circle"></div>
+          <div class="brown-circle_two"></div>
+          <div class="brown-circle_three"></div>
           <img src="../assets/img/testimonial-avata-02.jpg" alt="mina hollace" class="circle">
           <img src="../assets/img/maxcoach-shape-05-100x100.png" alt="cerchio" class="under-circle">
         </div>
@@ -98,6 +101,34 @@ export default {
       margin-left: 20px;
       margin-right: 20px;
       position: relative;
+      .brown-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #d2a98e;
+        z-index: 0;
+        position: absolute;
+        left: 30px;
+        bottom: 80px;
+      }
+      .brown-circle_two {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: #d2a98e;
+        border-radius: 50%;
+        left: 20px;
+        bottom: 40px;
+      }
+      .brown-circle_three {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: #d2a98e;
+        border-radius: 50%;
+        right: 30px;
+        bottom: 60px;
+      }
       .circle {
         position: relative;
         width: 125px;

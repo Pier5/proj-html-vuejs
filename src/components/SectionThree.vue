@@ -1,10 +1,6 @@
 <template>
   <section class="section-three">
     <div class="patterns">
-      <div class="pattern"></div>
-      <div class="pattern"></div>
-      <div class="pattern"></div>
-      <div class="pattern"></div>
       <div class="info-section">
         <div class="col-left">
           <div class="col-col-left">
@@ -59,7 +55,9 @@ export default {
 @import "../assets/styles/partials/variables";
 
 .section-three {
-  height: 550px;
+  height: 650px;
+  background-image: url("../assets/img/background-pattern-grid-line.png");
+  background-position-x: center;
 }
 .info-section{
   position: absolute;

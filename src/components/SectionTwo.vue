@@ -2,9 +2,6 @@
   <section class="section-two">
     <div class="patterns">
       <div class="pattern"></div>
-      <div class="pattern"></div>
-      <div class="pattern"></div>
-      <div class="pattern"></div>
       <div class="quote">
         <h1>Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h1>
         <h3>Fannie Moreno</h3>
@@ -44,6 +41,8 @@ export default {
 .section-two {
   margin-top: 60px;
   background-color: $white-color;
+  background-image: url("../assets/img/background-pattern-grid-line.png");
+  background-position-x: center;
   .quote {
     position: absolute;
     margin-top: 200px;

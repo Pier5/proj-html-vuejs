@@ -88,7 +88,6 @@ export default {
 
 .section-four {
   background-color: $lightheavenly;
-  margin-top: 100px;
   .course-card {
     width: 700px;
     text-align: center;
