@@ -5,11 +5,13 @@
         <h1>Learn At Your Own Pace!</h1>
         <h2>Get teamed up with people of the same will.</h2>
         <button class="main-btn">Get started for free</button>
+        <div class="img-container">
+          <img class="img-left" src="../assets/img/home-6-hero-left-person-244x300.png" alt="">
+          <img class="img-middle" src="../assets/img/home-6-hero-poster-final.jpg" alt="">
+          <img class="img-right" src="../assets/img/home-6-hero-right-person.png" alt="">
+        </div>
       </div>
-      <img src="../assets/img/home-6-hero-left-person.png" alt="immagine ragazza al pc" class="img-left">
-      <img src="../assets/img/home-6-hero-poster-final.jpg" alt="immagine home" class="jumbo-img">
-      <img src="../assets/img/icon-youtube-play.png" alt="logo yt" class="img-yt">
-      <img src="../assets/img/home-6-hero-right-person.png" alt="immagine ragazza seduta a terra con pc" class="img-right">
+
     </div>
 
   </section>
@@ -58,34 +60,32 @@ export default {
       font-family: 'Quicksand', sans-serif;
       }
     }
-  }
-  .img-left {
-    width: 18%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(107%, 18%);
-  }
-  .jumbo-img {
-    width: 44%;
-    border: 14px solid white;
-    border-radius: 14px;
-    box-shadow:  2px 8px  rgba(211, 208, 208, 0.2);
-    z-index: 1;
-  }
-  .img-right {
-    width: 10%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-246%, 188%);
-    z-index: -1;
-  }
-  .img-yt {
-    position: absolute;
-    width: 4%;
-    z-index: 1;
-    bottom: 75px;
+    .img-container {
+      width: 100%;
+      margin: 30px auto 0;
+      .img-left {
+        float: left;
+        width: 25%;
+        position: relative;
+        bottom: 50px;
+        left: 35px;
+        z-index: 0;
+      }
+      .img-middle {
+        float: left;
+        width: 50%;
+        border: 12px solid $white-color;
+        border-radius: 4px;
+        position: relative;
+        bottom: 45px;
+        z-index: 1;
+      }
+      .img-right {
+        float: left;
+        width: 15%;
+        margin-top: 160px;
+      }
+    }
   }
 }
 </style>
