@@ -60,10 +60,11 @@ export default {
     }
   }
   .img-left {
-    width: 19%;
+    width: 18%;
     position: absolute;
-    bottom: -60px;
-    left: 232px;
+    bottom: 0;
+    left: 0;
+    transform: translate(107%, 18%);
   }
   .jumbo-img {
     width: 44%;
@@ -75,8 +76,9 @@ export default {
   .img-right {
     width: 10%;
     position: absolute;
-    bottom: -160px;
-    right: 318px;
+    top: 0;
+    right: 0;
+    transform: translate(-246%, 188%);
     z-index: -1;
   }
   .img-yt {
