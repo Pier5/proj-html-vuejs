@@ -79,14 +79,20 @@ export default {
       .main-btn {
         border: none;
         background-color: $mountain-meadow;
-        color: $white-color;
         font-weight: bolder;
+        color: $white-color;
         font-size: .7rem;
         padding: .6rem 1.2rem;
         border-radius: 3px;
         margin-bottom: 60px;
         font-family: 'Quicksand', sans-serif;
         cursor: pointer;
+        transition: .6s;
+      }
+      .main-btn:hover {
+        background-color: $white-color;
+        color: $mountain-meadow;
+        transition: .6s;
       }
     }
     .img-container {

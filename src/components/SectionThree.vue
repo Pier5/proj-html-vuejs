@@ -160,6 +160,11 @@ export default {
       margin-top: 15px;
       cursor: pointer;
       font-family: 'Quicksand', sans-serif;
+      transition: .6s;
+    }
+    .main-btn:hover {
+      background-color: #3f3a64;
+      transition: .6s;
     }
   }
 }
