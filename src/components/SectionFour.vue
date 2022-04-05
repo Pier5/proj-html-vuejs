@@ -17,7 +17,9 @@
           </div>
         </div>
       </div>
-      <button class="main-btn">View all courses<font-awesome-icon icon="fa-solid fa-arrow-right-long" /></button>
+      <a href="https://maxcoach.thememove.com/main/">
+        <button class="main-btn">View all courses<font-awesome-icon icon="fa-solid fa-arrow-right-long" /></button>
+      </a>
     </div>
   </section>
 </template>
@@ -116,6 +118,7 @@ export default {
         display: flex;
         margin: 20px 5px;
         padding: 10px;
+        transition: .5s;
         cursor: pointer;
         .circle {
           width: 100px;
@@ -153,25 +156,33 @@ export default {
       }
     }
     .main-btn {
-      border: none;
+      border: 4px solid transparent;
       background-color: $mountain-meadow;
       color: $white-color;
       font-weight: bolder;
       font-size: .7rem;
-      padding: .6rem 1.2rem;
+      padding: .4rem 1rem;
       border-radius: 3px;
       margin-top: 20px;
       margin-bottom: 55px;
       font-family: 'Quicksand', sans-serif;
       cursor: pointer;
+      transition-duration: 1s;
       .fa-arrow-right-long {
         margin-left: 5px;
         font-size: .7rem;
       }
     }
+    .main-btn:hover {
+      border: 4px solid $rhino-color;
+      transition-duration: 1s;
+      transform: scale(1.1);
+    }
   }
   .card:hover {
-          background-color: white;
-        }
+    background-color: white;
+    transition: .5s;
+    transform: translateY(-15px);
+  }
 }
 </style>

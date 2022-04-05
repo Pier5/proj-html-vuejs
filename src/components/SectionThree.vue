@@ -57,7 +57,9 @@ export default {
 .section-three {
   height: 650px;
   background-image: url("../assets/img/background-pattern-grid-line.png");
+  background-size: 270px;
   background-position-x: center;
+  position: relative;
 }
 .info-section{
   position: absolute;
@@ -71,12 +73,15 @@ export default {
       width: 50%;
       margin-bottom: 40px;
       box-shadow: 0 3px 10px 8px rgba(211, 208, 208, 0.3);
+      z-index: 1;
     }
     .col-col-right {
       width: 50%;
       margin-left: 20px;
       margin-top: 40px;
       box-shadow: 0 3px 10px 8px rgba(211, 208, 208, 0.3);
+      z-index: 1;
+      background-color: $white-color;
     }
     .col-top,
     .col-bottom {

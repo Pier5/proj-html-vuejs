@@ -99,6 +99,12 @@ export default {
         .blog-img {
           width: 100%;
           border-radius: 3px;
+          transition: .5s;
+        }
+        .blog-img:hover {
+          transition: .5s;
+          transform: translateY(-12px);
+          box-shadow: 3px 5px 10px 0 rgba(3, 201, 169, 0.5);
         }
         h3 {
           margin: 15px 0 10px;

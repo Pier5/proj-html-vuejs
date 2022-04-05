@@ -58,15 +58,21 @@ export default {
     margin: 5px 0 20px;
   }
   .main-btn {
-      border: none;
-      background-color: $mountain-meadow;
-      color: $white-color;
-      font-weight: bolder;
-      font-size: .7rem;
-      padding: .6rem 2rem;
-      border-radius: 3px;
-      cursor: pointer;
-      font-family: 'Quicksand', sans-serif;
-    }
+    border: none;
+    background-color: $mountain-meadow;
+    color: $white-color;
+    font-weight: bolder;
+    font-size: .7rem;
+    padding: .6rem 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    transition: .5s;
+  }
+  .main-btn:hover {
+    background-color: #3f3a64;
+    color: $mandy-color;
+    transition: .5s;
+  }
 }
 </style>

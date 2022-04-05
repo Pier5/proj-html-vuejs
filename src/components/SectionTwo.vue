@@ -50,9 +50,10 @@ export default {
   margin-top: 60px;
   background-color: $white-color;
   background-image: url("../assets/img/background-pattern-grid-line.png");
+  background-size: 270px;
   background-position-x: center;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
   .circle {
     position: absolute;
     border-radius: 50%;
