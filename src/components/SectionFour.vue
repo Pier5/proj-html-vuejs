@@ -6,7 +6,7 @@
       <div class="cards">
         <div class="card"
           v-for="info in infoCourses"
-          :key="info"
+          :key="info.description"
         >
           <img class="circle" :src="info.img" :alt="info.description">
           <div class="infos">

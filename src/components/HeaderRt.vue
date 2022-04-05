@@ -4,7 +4,7 @@
       <img class="head-logo" src="../assets/img/light-logo.png" alt="logo azienda MaxCoach">
       <nav class="nav-head">
         <ul>
-          <li class="list-item" v-for="item in arrNavBar" :key="item">
+          <li class="list-item" v-for="item in arrNavBar" :key="item.text">
             <a class="link-item" href="item.link">{{ item.text }}</a>
             <font-awesome-icon icon="fa-solid fa-angle-down" />
           </li>
@@ -72,7 +72,7 @@ header {
   position: fixed;
   z-index: 5;
   .head-container {
-    width: 950px;
+    width: 900px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -80,14 +80,13 @@ header {
   .fa-cart-shopping,
   .fa-circle-user {
     color: $white-color;
-    align-self: flex-end;
+    vertical-align: bottom;
     font-size: .9rem;
     font-weight: bolder;
     margin-left: 5px;
     cursor: pointer;
   }
   .fa-circle-user {
-    align-self: center;
     font-size: 1rem;
   }
   .head-logo {
@@ -101,7 +100,7 @@ header {
     height: 100%;
     .list-item {
       display: inline-block;
-      margin-left: 35px;
+      margin-left: 30px;
       cursor: pointer;
      .link-item {
         color: $white-color;
@@ -130,7 +129,7 @@ header {
         border-radius: 50%;
         font-size: .5rem;
         position: absolute;
-        top: -6px;
+        top: -5px;
         right: -7px;
       }
     }

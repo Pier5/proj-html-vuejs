@@ -6,12 +6,12 @@
       <div class="container-blog">
         <div class="blog-post"
           v-for="post in blogPosts"
-          :key="post"
+          :key="post.title"
         >
           <a :href="post.link"><img class="blog-img" :src="post.img" :alt="post.title"></a>
           <h3>{{ post.profession }}</h3>
           <a :href="post.link"><h2>{{ post.title }}</h2></a>
-          <span class="date"><font-awesome-icon icon="fa-regular fa-calendar" />{{ post.date }}</span>
+          <span class="date"><font-awesome-icon icon="fa-regular fa-calendar" />{{ getTime(post) }}</span>
           <span class="viewers"><font-awesome-icon icon="fa-solid fa-eye" />{{ post.views }}</span>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default {
           link: '#',
           profession: 'Artist',
           title: 'Brush Strokes Energize Trees in Paintings',
-          date: 'May 15, 2020',
+          date: '2020-05-15T10:50:01',
           views: '688'
         },
         {
@@ -42,7 +42,7 @@ export default {
           link: '#',
           profession: 'Artist',
           title: 'Pocket-Sized Notebooks Hold Miniature Paintings',
-          date: 'May 15, 2020',
+          date: '2020-05-15T14:11:22',
           views: '603'
         },
         {
@@ -50,10 +50,17 @@ export default {
           link: '#',
           profession: 'Artist',
           title: 'Connection Between Self-Portraits and Identity',
-          date: 'May 15, 2020',
+          date: '2020-05-15T06:21:33',
           views: '397'
         }
       ]
+    }
+  },
+  methods: {
+    getTime (data) {
+      const date = new Date(data.date)
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return date.toLocaleString('en-En', options)
     }
   }
 }

@@ -8,9 +8,9 @@
         <h5>support@maxcoach.com</h5>
         <span class="social"
           v-for="icon in socialIcon"
-          :key="icon"
+          :key="icon.icon"
         >
-          <a :href="icon-link"><i class="icons" :class= "icon.icon" /></a>
+          <a :href="icon.link"><i class="icons" :class= "icon.icon" /></a>
         </span>
       </div>
       <div class="explore">
@@ -18,7 +18,7 @@
           <li class="title">Explore</li>
           <a
             v-for="element in arrExplore"
-            :key="element"
+            :key="element.name"
             :href="element.link"
           >
             <li>{{ element.name }}</li>
@@ -29,7 +29,7 @@
         <ul>
           <a
             v-for="element in arrAbout"
-            :key="element"
+            :key="element.name"
             :href="element.link"
           >
             <li>{{ element.name }}</li>
@@ -41,7 +41,7 @@
           <li class="title">Information</li>
           <a
             v-for="element in arrInformation"
-            :key="element"
+            :key="element.name"
             :href="element.link"
           >
             <li>{{ element.name }}</li>

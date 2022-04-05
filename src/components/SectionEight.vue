@@ -6,7 +6,7 @@
     <div class="courses">
       <div class="details"
         v-for="element in arrCourses"
-        :key="element"
+        :key="element.title"
 
       >
         <font-awesome-icon :icon= "element.icon" class="icon" />

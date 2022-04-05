@@ -19,7 +19,7 @@
       <div class="clients">
         <div class="client"
           v-for="element in logoClients"
-          :key="element"
+          :key="element.text"
           >
           <a :href="element.link"><img :src="element.logo" :alt="element.text" class="logos"></a>
         </div>
@@ -126,8 +126,8 @@ export default {
         position: absolute;
         background-color: #d2a98e;
         border-radius: 50%;
-        right: 30px;
-        bottom: 60px;
+        right: 35px;
+        bottom: 66px;
       }
       .circle {
         position: relative;
