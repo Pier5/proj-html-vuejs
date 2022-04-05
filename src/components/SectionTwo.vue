@@ -57,6 +57,7 @@ export default {
   .circle {
     position: absolute;
     border-radius: 50%;
+    z-index: 1;
   }
   .circle-one {
     width: 40px;

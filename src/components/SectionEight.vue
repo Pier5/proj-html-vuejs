@@ -1,8 +1,8 @@
 <template>
   <section class="section-eight">
-    <div class="circle-one"></div>
-    <div class="circle-two"></div>
-    <div class="circle-three"></div>
+    <div class="circle circle-one"></div>
+    <div class="circle circle-two"></div>
+    <div class="circle circle-reverse circle-three"></div>
     <div class="courses">
       <div class="details"
         v-for="element in arrCourses"
@@ -59,33 +59,53 @@ export default {
   font-family: 'Quicksand', sans-serif;
   position: relative;
   box-shadow: rgba(211, 208, 208, 0.38) 0 -650px 236px -120px inset;
-  .circle-one {
+  .circle {
     position: absolute;
+    border-radius: 50%;
+  }
+  .circle-one {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
     background-color: #fa7d61;
     bottom: 40px;
     left: 60px;
   }
   .circle-two {
-    position: absolute;
     width: 35px;
     height: 35px;
-    border-radius: 50%;
     background-color: #bce6df;
     bottom: 260px;
     left: 1150px;
   }
   .circle-three {
-    position: absolute;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     background-color: transparent;
     border: 5px solid #bce6df;
     bottom: 350px;
     left: 400px;
+  }
+  .circle {
+    animation: circleMove 4s linear infinite;
+  }
+  .circle-reverse {
+    animation: circleMoveReverse 4s linear infinite;
+  }
+  @keyframes circleMove {
+    from {
+      transform: rotate(0deg) translateX(50px) rotate(0deg);
+    }
+    to   {
+      transform: rotate(360deg) translateX(50px) rotate(-360deg);
+    }
+  }
+  @keyframes circleMoveReverse {
+    from {
+      transform: rotate(0deg) translateX(50px) rotate(0deg);
+    }
+    to   {
+      transform: rotate(-360deg) translateX(50px) rotate(360deg);
+    }
   }
   .courses {
     width: 900px;

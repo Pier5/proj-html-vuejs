@@ -91,7 +91,7 @@ export default {
     }
     .container-blog {
       display: flex;
-      width: 800px;
+      width: 820px;
       .blog-post {
         margin: 20px 15px 60px 0;
         width: calc(100% / 3 - 30px);
