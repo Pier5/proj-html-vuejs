@@ -7,7 +7,6 @@
       <div class="details"
         v-for="element in arrCourses"
         :key="element.title"
-
       >
         <font-awesome-icon :icon= "element.icon" class="icon" />
         <h2>{{ element.title }}</h2>
@@ -58,7 +57,7 @@ export default {
   margin-bottom: 40px;
   font-family: 'Quicksand', sans-serif;
   position: relative;
-  box-shadow: rgba(211, 208, 208, 0.38) 0 -650px 236px -120px inset;
+  box-shadow: rgba(211, 208, 208, 0.38) 0 -560px 236px -120px inset;
   .circle {
     position: absolute;
     border-radius: 50%;

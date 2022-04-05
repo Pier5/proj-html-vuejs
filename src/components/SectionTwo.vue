@@ -125,7 +125,7 @@ export default {
     flex-direction: column;
     h1 {
       margin: 0 40px;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       line-height: 2rem;
     }
     h3 {

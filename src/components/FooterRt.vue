@@ -217,6 +217,41 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
+    overflow: hidden;
+    background-size: 400% 400%;
+    animation: TransitioningBackground 5s ease infinite;
+    transition: 4s;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.5);
+      width: 60px;
+      height: 100%;
+      top: 0;
+      filter: blur(30px);
+      transform: translateX(-100px) skewX(-15deg);
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.2);
+      height: 100%;
+      top: 0;
+      filter: blur(5px);
+      transform: translateX(-100px) skewX(-15deg);
+    }
+    &:hover {
+      background-image: (linear-gradient(to left, #2d8fe5, #d155b8));
+      cursor: pointer;
+      &::before,
+      &::after {
+        transform: translateX(100px) skewX(-15deg);
+        transition: 5s;
+      }
+    }
+  }
     a {
       align-self: center;
       color: $white-color;
@@ -225,6 +260,16 @@ footer {
   .social:hover .icons{
     transform: scale(1.2);
     transition: .5s;
+  }
+  @keyframes TransitioningBackground {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
   }
 }
 </style>

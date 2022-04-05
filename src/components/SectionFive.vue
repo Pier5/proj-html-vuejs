@@ -110,6 +110,7 @@ export default {
         position: absolute;
         left: 30px;
         bottom: 80px;
+        transition: 2s;
       }
       .brown-circle_two {
         width: 60px;
@@ -119,6 +120,7 @@ export default {
         border-radius: 50%;
         left: 20px;
         bottom: 40px;
+        transition: 2s;
       }
       .brown-circle_three {
         width: 60px;
@@ -128,6 +130,7 @@ export default {
         border-radius: 50%;
         right: 35px;
         bottom: 66px;
+        transition: 2s;
       }
       .circle {
         position: relative;
@@ -174,6 +177,31 @@ export default {
     .logos {
       width: 60%;
       margin-right: 20px;
+    }
+  }
+  .circles:hover .brown-circle {
+    transform: translateY(-10px);
+    transition: 2s;
+
+  }
+  .circles:hover .brown-circle_two {
+    transform: translateY(-10px);
+    transition: 2s;
+
+  }
+  .circles:hover .brown-circle_three {
+    transform: translateY(-10px);
+    transition: 2s;
+  }
+  .circles:hover .under-circle {
+    animation: moving 2s linear infinite;
+  }
+  @keyframes moving {
+    from {
+      transform: rotate(100deg) translateX(0) rotate(0deg);
+    }
+    to   {
+      transform: rotate(360deg) translateX(0) rotate(-360deg);
     }
   }
 }

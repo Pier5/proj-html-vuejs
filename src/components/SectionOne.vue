@@ -1,7 +1,6 @@
 <template>
   <section class="section-one">
     <div class="items">
-
       <div class="icon"><a href=""><font-awesome-icon class="item" icon="fa-solid fa-ruler" /></a></div>
       <div class="icon"><a href=""><font-awesome-icon class="item" icon="fa-solid fa-life-ring" /></a></div>
       <div class="icon"><a href=""><font-awesome-icon class="item" icon="fa-solid fa-book" /></a></div>
@@ -19,9 +18,7 @@
           <img class="img-right" src="../assets/img/home-6-hero-right-person.png" alt="">
         </div>
       </div>
-
     </div>
-
   </section>
 </template>
 
@@ -136,8 +133,8 @@ export default {
     }
   }
   .icon:hover {
-      background-color: $mountain-meadow;
-      transform: scale(1.3);
-    }
+    background-color: $mountain-meadow;
+    transform: scale(1.3);
+  }
 }
 </style>
