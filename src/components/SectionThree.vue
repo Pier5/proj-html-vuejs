@@ -132,16 +132,16 @@ export default {
     }
     h1 {
       margin: 1rem 0 1.6rem;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       line-height: 2rem;
       .green-text {
         color: $mountain-meadow;
-        font-weight: lighter;
+        font-weight: normal;
       }
     }
     li {
       list-style-type: none;
-      font-size: .6rem;
+      font-size: .65rem;
       color: $dovegray-color;
       line-height: 1.4rem;
       font-family: "Gilroy";

@@ -99,8 +99,8 @@ export default {
     height: 45px;
     background-color: transparent;
     border: 7px solid #f6b9aa;
-    bottom: 180px;
-    right: 400px;
+    bottom: 190px;
+    right: 340px;
   }
   .circle-seven {
     width: 20px;
@@ -118,7 +118,7 @@ export default {
   }
   .quote {
     margin-top: 200px;
-    width: 560px;
+    width: 605px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -141,7 +141,7 @@ export default {
       display: flex;
       margin-top: 100px;
       .single-statistic {
-        margin-right: 40px;
+        margin-right: 50px;
       }
       h2 {
         color: $mountain-meadow;
@@ -153,7 +153,7 @@ export default {
         width: 110px;
         color: $dovegray-color;
         font-size: .8rem;
-        font-weight: lighter;
+        margin: 0 .5rem;
       }
     }
   }

@@ -72,7 +72,7 @@ header {
   position: fixed;
   z-index: 5;
   .head-container {
-    width: 900px;
+    width: 850px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -111,12 +111,12 @@ header {
       .fa-angle-down {
         color: $white-color;
         font-size: .5rem;
-        margin-left: 4px;
+        margin-left: 5px;
       }
     }
     .cart {
       position: relative;
-      margin-right: 30px;
+      margin-right: 20px;
       .cart-items {
         width: 12px;
         height: 12px;
@@ -141,7 +141,10 @@ header {
       .search-bar {
         font-size: .7rem;
         border: none;
-        padding: .4rem;
+        padding-top: .4rem;
+        padding-bottom: .4rem;
+        padding-left: .6rem;
+        font-family: 'Quicksand', sans-serif;
       }
       .fa-magnifying-glass {
         font-size: .8rem;

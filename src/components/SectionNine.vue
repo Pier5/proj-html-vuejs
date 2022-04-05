@@ -63,7 +63,7 @@ export default {
     color: $white-color;
     font-weight: bolder;
     font-size: .7rem;
-    padding: .6rem 2rem;
+    padding: .6rem 2.4rem;
     border-radius: 3px;
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;

@@ -145,7 +145,7 @@ footer {
     list-style-type: none;
   }
   .foot-contain {
-    width: 900px;
+    width: 800px;
     margin: 0 auto;
     display: flex;
     padding: 40px 0;
@@ -153,11 +153,11 @@ footer {
       width: 50%;
       h3 {
         font-size: .9rem;
-        margin-bottom: 10px;
+        margin-bottom: 22px;
       }
       h4,
       h5 {
-        font-size: .8rem;
+        font-size: .7rem;
         color: $dovegray-color;
         padding-bottom: 1.5rem;
       }
@@ -169,6 +169,9 @@ footer {
         color: $silver-color;
         font-size: 1.3rem;
         text-decoration: none;
+      }
+      .icons {
+        transition: .5s;
       }
     }
     .explore {
@@ -218,6 +221,10 @@ footer {
       align-self: center;
       color: $white-color;
     }
+  }
+  .social:hover .icons{
+    transform: scale(1.2);
+    transition: .5s;
   }
 }
 </style>

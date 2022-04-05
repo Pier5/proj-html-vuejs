@@ -128,9 +128,9 @@ export default {
       }
       .img-right {
         float: left;
-        width: 12%;
+        width: 13%;
         position: relative;
-        bottom: -170px;
+        bottom: -162px;
         z-index: 0;
       }
     }

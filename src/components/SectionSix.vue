@@ -12,7 +12,7 @@
           <h3>{{ post.profession }}</h3>
           <a :href="post.link"><h2>{{ post.title }}</h2></a>
           <span class="date"><font-awesome-icon icon="fa-regular fa-calendar" />{{ getTime(post) }}</span>
-          <span class="viewers"><font-awesome-icon icon="fa-solid fa-eye" />{{ post.views }}</span>
+          <span class="viewers"><font-awesome-icon icon="fa-solid fa-eye" />{{ post.views }} views</span>
         </div>
       </div>
     </div>
